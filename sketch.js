@@ -1,21 +1,25 @@
 
 let img;
 let matchIsBeingDragged = false;
+let button = [];
 
 function setup() {
   noCanvas();
   
-  let p = createP("FLASHLIGHT");
-  
-  let button = createButton("1");
+  button = createButton("1");
   button.mouseClicked( button1click );
 
   button = createButton("2");
+  button.mouseClicked(button2click);
+
   button = createButton("3");
-  
-  img = createImg("assets/match.png");
-  img.mousePressed( matchPressed );
-  img.mouseReleased( matchReleased );
+  button.mouseClicked(button3click);
+
+
+  // figure out images 
+  // img = createImg("assets/match.png");
+  // img.mousePressed( matchPressed );
+  // img.mouseReleased( matchReleased );
   // img.style("width","40px");
 
 }
@@ -33,8 +37,15 @@ function draw() {
 
 function button1click() {
   console.log("clicked button 1");
-  location.href = "index2.html";
+  location.href = "indexmatch.html";
 }
 
+function button2click() {
+  console.log("clicked button 2");
+  location.href = "indexflint.html";
+}
 
-
+function button3click() {
+  console.log("clicked button 3");
+  location.href = "indexbow.html";
+}
