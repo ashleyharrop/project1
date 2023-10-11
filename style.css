@@ -18,5 +18,8 @@ img
     user-select: none; /* Standard syntax */
   }
 
- 
+.center-text h2 {
+  font-size: 20px;
+  
+}
 
