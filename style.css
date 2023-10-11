@@ -2,8 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   /* cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
 }
 
 
@@ -18,4 +18,5 @@ img
     user-select: none; /* Standard syntax */
   }
 
+ 
 
